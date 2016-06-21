@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string>
+
+using std::cin;
+using std::endl;
+using std::cout;
+using sd::string;
+
+int main()
+{  
+  
+  for (int f = 0; f != 1; f = 0) 
+    {  
+      cout << "Please enter the character's feature: square(s)/rectangle(r)/triangle(t)? ";
+      string feature;
+      cin >> feature;
+      
+      if (feature = s)
+	{
+	  cout << "Please define the side length of the square: "
+	    int side_square;
+	  cin >> side_square;
+          
+          for (int sq = 0; sq != side_square; ++sq)
+	    {
+              for (int sl = 0; sl != side_square; ++sl)
+		{
+		  cout << "*";
+		}
+	    }
+	  f = 1;
+	}  
+      elif (feature =  r)
+	{
+	  cout << "Under developing";
+	  f = 1;
+	}  
+      elif {feature = t)
+	{
+	  cout << "Under developing";
+	  f = 1;
+	}
+     else 
+       {
+	 cout << "Input error!"
+	   f = 0;
+       }
+    
+    }
+
+  return 0;
+}

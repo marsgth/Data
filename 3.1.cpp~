@@ -1,0 +1,56 @@
+#include <iomanip>
+#include <ios>
+#include <iostream>
+#include <string>
+
+using std::cin;
+using std::cout;
+using std::endl;
+using std::precision;
+using std::setprecision;
+using std::string;
+using std::streamsize;
+
+
+int main()
+{ 
+  //!Require to input and read in names of students
+  //ask for and read the student's name
+  cout << "Please enter your first name: ";
+  string name; 
+  cin >> name;
+  cout << "Hello, " << name << "!" << endl; 
+
+  //!Require to input scores of mid-term and final exams
+  
+  cout << "Please enter your midterm and final exam grades: ";
+  double midterm, final; 
+  cin >> midterm >> final; 
+
+  //! Require homework grades
+  cout << "Enter all your homework grades, " 
+    "followed by end-of-file: ";
+
+  //!count numbers of homework grades from now on and sum them
+  int count = 0; 
+  double sum = 0; 
+
+  //!read homework grades to variable x
+  double x; 
+
+  //constant
+  //!From now on we have already read count homework grades
+  //!And sum equals the sum of first count grades
+  while (cin >> x) {
+    ++count;
+    sum += x;
+  }
+
+  //output result
+  streamsize prec = cout.precision();
+  cout << "Your final grade is " <<setprecision(3)
+       << 0.2 * midterm + 0.4 * final + 0.4 * sum / count
+       << setprecision(prec) << endl;
+
+  return 0;
+} 

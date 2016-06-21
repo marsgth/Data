@@ -1,0 +1,10 @@
+#include <iostream>
+
+int main()
+{
+  std::out << "//a small C++ programme\n"
+    "#include <iostream>\n"
+    "\n"
+    "int main()\n"
+    "{\n"
+    "\tstd::out << \"Hello, World!\"
